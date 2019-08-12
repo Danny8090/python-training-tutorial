@@ -17,15 +17,24 @@ Review，Review通过后，提交到GitLab。
 
 1. 相关资源
 
-[廖雪峰官网Python自学教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)  
-[菜鸟教程Python自学教程](http://www.runoob.com/python3/python3-tutorial.html)  
+[廖雪峰官网Python自学教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
+
+[菜鸟教程Python自学教程](http://www.runoob.com/python3/python3-tutorial.html)
+
 [菜鸟教程MySQL自学教程](http://www.runoob.com/mysql/mysql-tutorial.html)
+
 [菜鸟教程Mongo自学教程](http://www.runoob.com/mongodb/mongodb-tutorial.html)
+
 [菜鸟教程Redis自学教程](http://www.runoob.com/redis/redis-tutorial.html)
+
 [菜鸟教程Sqlite自学教程](http://www.runoob.com/sqlite/sqlite-tutorial.html)
+
 [慕课网Python教学视频](https://www.imooc.com/learn/177)  
+
 [Python官网文档](https://docs.python.org/3.7/)  
+
 [C语言中文网](http://c.biancheng.net/python/)
+
 
 [Python培训教程](http://10.100.15.204/job/python-training-tutorial/python-tutorial/)  
 [Python练习项目](http://10.100.15.200/python-training/python-training)
