@@ -1,0 +1,999 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <title>1.12、错误与异常 · Python培训教程</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="冉禛">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-spoiler/spoiler.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-latex-codecogs/latex-codecogs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.13-类与对象.html" />
+    
+    
+    <link rel="prev" href="1.11-文件操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">西安博彦Python培训</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    培训计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="基础知识.html">
+            
+                <a href="基础知识.html">
+            
+                    
+                    基础知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1-发展简介.html">
+            
+                <a href="1.1-发展简介.html">
+            
+                    
+                    1.1、发展简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2-环境搭建.html">
+            
+                <a href="1.2-环境搭建.html">
+            
+                    
+                    1.2、环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3-基础语法.html">
+            
+                <a href="1.3-基础语法.html">
+            
+                    
+                    1.3、基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4-数据类型.html">
+            
+                <a href="1.4-数据类型.html">
+            
+                    
+                    1.4、数据类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="1.4.1-数字.html">
+            
+                <a href="1.4.1-数字.html">
+            
+                    
+                    1.4.1、数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="1.4.2-字符串.html">
+            
+                <a href="1.4.2-字符串.html">
+            
+                    
+                    1.4.2、字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="1.4.3-列表.html">
+            
+                <a href="1.4.3-列表.html">
+            
+                    
+                    1.4.3、列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="1.4.4-元组.html">
+            
+                <a href="1.4.4-元组.html">
+            
+                    
+                    1.4.4、元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="1.4.5-集合.html">
+            
+                <a href="1.4.5-集合.html">
+            
+                    
+                    1.4.5、集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="1.4.6-字典.html">
+            
+                <a href="1.4.6-字典.html">
+            
+                    
+                    1.4.6、字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1.5-运算符.html">
+            
+                <a href="1.5-运算符.html">
+            
+                    
+                    1.5、运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1.6-条件语句.html">
+            
+                <a href="1.6-条件语句.html">
+            
+                    
+                    1.6、条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1.7-循环语句.html">
+            
+                <a href="1.7-循环语句.html">
+            
+                    
+                    1.7、循环语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1.8-函数.html">
+            
+                <a href="1.8-函数.html">
+            
+                    
+                    1.8、函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="1.9-模块.html">
+            
+                <a href="1.9-模块.html">
+            
+                    
+                    1.9、模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="1.10-输入输出.html">
+            
+                <a href="1.10-输入输出.html">
+            
+                    
+                    1.10、输入输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="1.11-文件操作.html">
+            
+                <a href="1.11-文件操作.html">
+            
+                    
+                    1.11、文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.12" data-path="1.12-错误与异常.html">
+            
+                <a href="1.12-错误与异常.html">
+            
+                    
+                    1.12、错误与异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="1.13-类与对象.html">
+            
+                <a href="1.13-类与对象.html">
+            
+                    
+                    1.13、类与对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="1.14-数据结构.html">
+            
+                <a href="1.14-数据结构.html">
+            
+                    
+                    1.14、数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="1.15-迭代器.html">
+            
+                <a href="1.15-迭代器.html">
+            
+                    
+                    1.15、迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="1.16-生成器.html">
+            
+                <a href="1.16-生成器.html">
+            
+                    
+                    1.16、生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="1.17-装饰器.html">
+            
+                <a href="1.17-装饰器.html">
+            
+                    
+                    1.17、装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="1.18-练习题.html">
+            
+                <a href="1.18-练习题.html">
+            
+                    
+                    1.18、练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../进阶知识/进阶知识.html">
+            
+                <a href="../进阶知识/进阶知识.html">
+            
+                    
+                    进阶知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../进阶知识/2.1-多线程.html">
+            
+                <a href="../进阶知识/2.1-多线程.html">
+            
+                    
+                    2.1、多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../进阶知识/2.2-多进程.html">
+            
+                <a href="../进阶知识/2.2-多进程.html">
+            
+                    
+                    2.2、多进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../进阶知识/2.3-网络编程.html">
+            
+                <a href="../进阶知识/2.3-网络编程.html">
+            
+                    
+                    2.3、网络编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../进阶知识/2.4-MySQL数据库.html">
+            
+                <a href="../进阶知识/2.4-MySQL数据库.html">
+            
+                    
+                    2.4、MySQL数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../进阶知识/2.5-Mongo数据库.html">
+            
+                <a href="../进阶知识/2.5-Mongo数据库.html">
+            
+                    
+                    2.5、Mongo数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../进阶知识/2.6-Redis数据库.html">
+            
+                <a href="../进阶知识/2.6-Redis数据库.html">
+            
+                    
+                    2.6、Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../进阶知识/2.7-Sqlite数据库.html">
+            
+                <a href="../进阶知识/2.7-Sqlite数据库.html">
+            
+                    
+                    2.7、Sqlite数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../进阶知识/2.8-JSON构建与解析.html">
+            
+                <a href="../进阶知识/2.8-JSON构建与解析.html">
+            
+                    
+                    2.8、JSON构建与解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../进阶知识/2.9-Excel文档读写.html">
+            
+                <a href="../进阶知识/2.9-Excel文档读写.html">
+            
+                    
+                    2.9、Excel文档读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../进阶知识/2.10-Flask框架讲解.html">
+            
+                <a href="../进阶知识/2.10-Flask框架讲解.html">
+            
+                    
+                    2.10、Flask框架讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../进阶知识/2.11-网络资源访问.html">
+            
+                <a href="../进阶知识/2.11-网络资源访问.html">
+            
+                    
+                    2.11、网络资源访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../进阶知识/2.12-练习题.html">
+            
+                <a href="../进阶知识/2.12-练习题.html">
+            
+                    
+                    2.12、练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../项目练习/项目练习.html">
+            
+                <a href="../项目练习/项目练习.html">
+            
+                    
+                    项目练习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../项目练习/3.1-HL7标准Python构建与解析.html">
+            
+                <a href="../项目练习/3.1-HL7标准Python构建与解析.html">
+            
+                    
+                    3.1、HL7标准Python构建与解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.12、错误与异常</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="python3&#x9519;&#x8BEF;&#x548C;&#x5F02;&#x5E38;">Python3&#x9519;&#x8BEF;&#x548C;&#x5F02;&#x5E38;</h2>
+<p>&#x2003;&#x2003;&#x4F5C;&#x4E3A;Python&#x521D;&#x5B66;&#x8005;&#xFF0C;&#x5728;&#x521A;&#x5B66;&#x4E60;Python&#x7F16;&#x7A0B;&#x65F6;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E9B;&#x62A5;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x524D;&#x9762;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x63D0;
+&#x53CA;&#xFF0C;&#x8FD9;&#x7AE0;&#x8282;&#x6211;&#x4EEC;&#x4F1A;&#x4E13;&#x95E8;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x2003;&#x2003;<font color="red">Python&#x6709;&#x4E24;&#x79CD;&#x9519;&#x8BEF;&#x5F88;&#x5BB9;&#x6613;&#x8FA8;&#x8BA4;&#xFF1A;<strong>&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</strong>&#x548C;<strong>&#x5F02;&#x5E38;</strong>&#x3002;</font></p>
+<h3 id="&#x8BED;&#x6CD5;&#x9519;&#x8BEF;">&#x8BED;&#x6CD5;&#x9519;&#x8BEF;</h3>
+<p>&#x2003;&#x2003;Python&#x7684;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x6216;&#x8005;&#x79F0;&#x4E4B;&#x4E3A;&#x89E3;&#x6790;&#x9519;&#x8BEF;&#xFF0C;&#x662F;&#x521D;&#x5B66;&#x8005;&#x7ECF;&#x5E38;&#x78B0;&#x5230;&#x7684;&#xFF0C;&#x5982;&#x4E0B;&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>while True print<span class="token punctuation">(</span><span class="token string">&apos;Hello world&apos;</span><span class="token punctuation">)</span>
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+    <span class="token keyword">while</span> True print<span class="token punctuation">(</span><span class="token string">&apos;Hello world&apos;</span><span class="token punctuation">)</span>
+                   ^
+SyntaxError: invalid syntax
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x51FD;&#x6570;print()&#x88AB;&#x68C0;&#x67E5;&#x5230;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x662F;&#x5B83;&#x524D;&#x9762;&#x7F3A;&#x5C11;&#x4E86;&#x4E00;&#x4E2A;&#x5192;&#x53F7;(:)&#x3002;</p>
+<p>&#x2003;&#x2003;<font color="red">&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x5668;&#x6307;&#x51FA;&#x4E86;&#x51FA;&#x9519;&#x7684;&#x4E00;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x6700;&#x5148;&#x627E;&#x5230;&#x7684;&#x9519;&#x8BEF;&#x7684;&#x4F4D;&#x7F6E;&#x6807;&#x8BB0;&#x4E86;
+&#x4E00;&#x4E2A;&#x5C0F;&#x5C0F;&#x7684;&#x7BAD;&#x5934;&#x3002;</font></p>
+<h3 id="&#x5F02;&#x5E38;">&#x5F02;&#x5E38;</h3>
+<p>&#x2003;&#x2003;&#x5373;&#x4FBF;Python&#x7A0B;&#x5E8F;&#x7684;&#x8BED;&#x6CD5;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x5728;&#x8FD0;&#x884C;&#x5B83;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x3002;<font color="red">
+&#x8FD0;&#x884C;&#x671F;&#x68C0;&#x6D4B;&#x5230;&#x7684;&#x9519;&#x8BEF;&#x88AB;&#x79F0;&#x4E3A;&#x5F02;&#x5E38;&#x3002;</font>&#x5927;&#x591A;&#x6570;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x7A0B;&#x5E8F;&#x5904;&#x7406;&#xFF0C;&#x90FD;&#x4EE5;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x5F62;&#x5F0F;&#x5C55;&#x73B0;&#x5728;&#x8FD9;&#x91CC;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>10 * <span class="token punctuation">(</span>1/0<span class="token punctuation">)</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+ZeroDivisionError: division by zero
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> 4 + spam*3
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+NameError: name <span class="token string">&apos;spam&apos;</span> is not defined
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token string">&apos;2&apos;</span> + 2
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+TypeError: Can<span class="token string">&apos;t convert &apos;</span>int&apos; object to str implicitly
+</code></pre>
+<p>&#x5F02;&#x5E38;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#x51FA;&#x73B0;&#xFF0C;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x90FD;&#x4F5C;&#x4E3A;&#x4FE1;&#x606F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x6253;&#x5370;&#x51FA;&#x6765;: &#x4F8B;&#x5B50;&#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x6709;
+<code>ZeroDivisionError</code>&#xFF0C;<code>NameError</code>&#x548C;<code>TypeError</code>&#x3002;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x524D;&#x9762;&#x90E8;&#x5206;&#x663E;&#x793A;&#x4E86;&#x5F02;&#x5E38;&#x53D1;&#x751F;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;
+&#x5E76;&#x4EE5;&#x8C03;&#x7528;&#x6808;&#x7684;&#x5F62;&#x5F0F;&#x663E;&#x793A;&#x5177;&#x4F53;&#x4FE1;&#x606F;&#x3002;</p>
+<h3 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h3>
+<p>&#x2003;&#x2003;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8BA9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5408;&#x6CD5;&#x7684;&#x6574;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x4E2D;&#x65AD;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;
+(&#x4F7F;&#x7528;Control-C&#x6216;&#x8005;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x65B9;&#x6CD5;)&#x3002;&#x7528;&#x6237;&#x4E2D;&#x65AD;&#x7684;&#x4FE1;&#x606F;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E2A;<code>KeyboardInterrupt</code>&#x5F02;&#x5E38;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>while True:
+        try:
+            x <span class="token operator">=</span> int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">&apos;Please enter a number:&apos;</span><span class="token punctuation">))</span>
+            <span class="token keyword">break</span>
+        except ValueError:
+            print<span class="token punctuation">(</span><span class="token string">&apos;Oops! That was no valid number. Try again&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>try</code>&#x8BED;&#x53E5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#xFF1B;</p>
+<ul>
+<li>&#x9996;&#x5148;&#xFF0C;&#x6267;&#x884C;<code>try</code>&#x5B50;&#x53E5;(&#x5728;&#x5173;&#x952E;&#x5B57;<code>try</code>&#x548C;&#x5173;&#x952E;&#x5B57;<code>except</code>&#x4E4B;&#x95F4;&#x7684;&#x8BED;&#x53E5;)&#x3002;</li>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F02;&#x5E38;&#x53D1;&#x751F;&#xFF0C;&#x5FFD;&#x7565;<code>except</code>&#x5B50;&#x53E5;&#xFF0C;<code>try</code>&#x5B50;&#x53E5;&#x6267;&#x884C;&#x540E;&#x7ED3;&#x675F;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x6267;&#x884C;<code>try</code>&#x5B50;&#x53E5;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x53D1;&#x751F;&#x4E86;&#x5F02;&#x5E38;&#xFF0C;&#x90A3;&#x4E48;<code>try</code>&#x5B50;&#x53E5;&#x4F59;&#x4E0B;&#x7684;&#x90E8;&#x5206;&#x5C06;&#x88AB;&#x5FFD;&#x7565;&#x3002;&#x5982;&#x679C;&#x5F02;&#x5E38;&#x7684;&#x7C7B;&#x578B;&#x548C;
+<code>except</code>&#x4E4B;&#x540E;&#x7684;&#x540D;&#x79F0;&#x76F8;&#x7B26;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x7684;<code>except</code>&#x5B50;&#x53E5;&#x5C06;&#x88AB;&#x6267;&#x884C;&#x3002;&#x6700;&#x540E;&#x6267;&#x884C;<code>try</code>&#x8BED;&#x53E5;&#x4E4B;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x6CA1;&#x6709;&#x4E0E;&#x4EFB;&#x4F55;&#x7684;<code>except</code>&#x5339;&#x914D;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x5C06;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;&#x4E0A;&#x5C42;&#x7684;<code>try</code>&#x4E2D;&#x3002;</li>
+</ul>
+<p>&#x2003;&#x2003;<font color="red">&#x4E00;&#x4E2A;<code>try</code>&#x8BED;&#x53E5;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x4E2A;<code>except</code>&#x5B50;&#x53E5;&#xFF0C;&#x5206;&#x522B;&#x6765;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x7279;
+&#x5B9A;&#x7684;&#x5F02;&#x5E38;&#x3002;</font>&#x6700;&#x591A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5C06;&#x53EA;&#x9488;&#x5BF9;&#x5BF9;&#x5E94;&#x7684;<code>try</code>&#x5B50;&#x53E5;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;
+&#x800C;&#x4E0D;&#x662F;&#x5176;&#x4ED6;&#x7684;<code>try</code>&#x7684;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x2003;&#x2003;<font color="red">&#x4E00;&#x4E2A;<code>except</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x5F02;&#x5E38;&#xFF0C;&#x8FD9;&#x4E9B;&#x5F02;&#x5E38;&#x5C06;&#x88AB;&#x653E;&#x5728;&#x4E00;&#x4E2A;
+&#x62EC;&#x53F7;&#x91CC;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#x3002;</font>&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">except</span> <span class="token punctuation">(</span>RuntimeError<span class="token punctuation">,</span> TypeError<span class="token punctuation">,</span> NameError<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">pass</span>
+</code></pre>
+<p>&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>except</code>&#x5B50;&#x53E5;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x5F02;&#x5E38;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x5F53;&#x4F5C;&#x901A;&#x914D;&#x7B26;&#x4F7F;&#x7528;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6253;&#x5370;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;
+&#x606F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x628A;&#x5F02;&#x5E38;&#x629B;&#x51FA;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> sys
+
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    f <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&apos;myfile.txt&apos;</span><span class="token punctuation">)</span>
+    s <span class="token operator">=</span> f<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    i <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> OSError <span class="token keyword">as</span> err<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;OS error: {0}&apos;</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span> ValueError<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Could not convert data to an integer.&apos;</span><span class="token punctuation">)</span>
+<span class="token keyword">except</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;Unexpected error:&apos;</span><span class="token punctuation">,</span> sys<span class="token punctuation">.</span>exc_info<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">raise</span>
+</code></pre>
+<p>&#x2003;&#x2003;<font color="red"><code>try except</code>&#x8BED;&#x53E5;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;<code>else</code>&#x5B50;&#x53E5;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B50;
+&#x53E5;&#xFF0C;&#x90A3;&#x4E48;&#x5FC5;&#x987B;&#x653E;&#x5728;&#x6240;&#x6709;&#x7684;<code>except</code>&#x5B50;&#x53E5;&#x4E4B;&#x540E;&#x3002;&#x8FD9;&#x4E2A;&#x5B50;&#x53E5;&#x5C06;&#x5728;<code>try</code>&#x5B50;&#x53E5;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x4EFB;&#x4F55;&#x5F02;&#x5E38;&#x7684;&#x65F6;&#x5019;&#x6267;&#x884C;&#x3002;
+</font>&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">for</span> arg <span class="token keyword">in</span> sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        fp <span class="token operator">=</span> <span class="token builtin">open</span><span class="token punctuation">(</span>arg<span class="token punctuation">,</span> <span class="token string">&apos;r&apos;</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> IOError<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&apos;cannot open&apos;</span><span class="token punctuation">,</span> arg<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>arg<span class="token punctuation">,</span> <span class="token string">&apos;has&apos;</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>f<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&apos;lines&apos;</span><span class="token punctuation">)</span>
+        fp<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>else</code>&#x5B50;&#x53E5;&#x6BD4;&#x628A;&#x6240;&#x6709;&#x7684;&#x8BED;&#x53E5;&#x90FD;&#x653E;&#x5728;<code>try</code>&#x5B50;&#x53E5;&#x91CC;&#x9762;&#x8981;&#x597D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4E00;&#x4E9B;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x3001;&#x800C;
+<code>except</code>&#x53C8;&#x6CA1;&#x6709;&#x6355;&#x83B7;&#x7684;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x5E76;&#x4E0D;&#x4EC5;&#x4EC5;&#x5904;&#x7406;&#x90A3;&#x4E9B;&#x76F4;&#x63A5;&#x53D1;&#x751F;&#x5728;<code>try</code>&#x5B50;&#x53E5;&#x4E2D;&#x7684;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x80FD;&#x5904;&#x7406;&#x5B50;&#x53E5;&#x4E2D;&#x8C03;
+&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF08;&#x751A;&#x81F3;&#x95F4;&#x63A5;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF09;&#x91CC;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>def this_fails<span class="token punctuation">(</span><span class="token punctuation">)</span>:
+        x <span class="token operator">=</span> 1/0
+
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> try:
+        this_fails<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    except ZeroDivisionError as err:
+        print<span class="token punctuation">(</span><span class="token string">&apos;Handling run-time error:&apos;</span>, err<span class="token punctuation">)</span>
+
+Handling run-time error: int division or modulo by zero
+</code></pre>
+<h3 id="&#x629B;&#x51FA;&#x5F02;&#x5E38;">&#x629B;&#x51FA;&#x5F02;&#x5E38;</h3>
+<p>&#x2003;&#x2003;<font color="red">Python&#x4F7F;&#x7528;<code>raise</code>&#x8BED;&#x53E5;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x5F02;&#x5E38;&#x3002;</font>&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>raise NameError<span class="token punctuation">(</span><span class="token string">&apos;HiThere&apos;</span><span class="token punctuation">)</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+NameError: HiThere
+</code></pre>
+<p>&#x2003;&#x2003;<font color="red"><code>raise</code>&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x88AB;&#x629B;&#x51FA;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;
+&#x7684;&#x5B9E;&#x4F8B;&#x6216;&#x8005;&#x662F;&#x5F02;&#x5E38;&#x7684;&#x7C7B;(&#x4E5F;&#x5C31;&#x662F;<code>Exception</code>&#x7684;&#x5B50;&#x7C7B;)&#x3002;</font></p>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x60F3;&#x77E5;&#x9053;&#x8FD9;&#x662F;&#x5426;&#x629B;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#xFF0C;&#x5E76;&#x4E0D;&#x60F3;&#x53BB;&#x5904;&#x7406;&#x5B83;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;<code>raise</code>
+&#x8BED;&#x53E5;&#x5C31;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x628A;&#x5B83;&#x629B;&#x51FA;&#x3002;</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>try:
+        raise NameError<span class="token punctuation">(</span><span class="token string">&apos;HiThere&apos;</span><span class="token punctuation">)</span>
+    except NameError:
+        print<span class="token punctuation">(</span><span class="token string">&apos;An exception flew by!&apos;</span><span class="token punctuation">)</span>
+        raise
+
+An exception flew by<span class="token operator">!</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 2, <span class="token keyword">in</span> ?
+NameError: HiThere
+</code></pre>
+<h3 id="&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;">&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;</h3>
+<p>&#x2003;&#x2003;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5F02;&#x5E38;&#x7C7B;&#x6765;&#x62E5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5F02;&#x5E38;&#x3002;&#x5F02;&#x5E38;&#x7C7B;&#x7EE7;&#x627F;&#x81EA;<code>Exception</code>&#x7C7B;&#xFF0C;
+&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7EE7;&#x627F;&#xFF0C;&#x6216;&#x8005;&#x95F4;&#x63A5;&#x7EE7;&#x627F;&#xFF0C;&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>class MyError<span class="token punctuation">(</span>Exception<span class="token punctuation">)</span>:
+        def __init__<span class="token punctuation">(</span>self, value<span class="token punctuation">)</span>:
+            self.value <span class="token operator">=</span> value
+
+        def __str__<span class="token punctuation">(</span>self<span class="token punctuation">)</span>:
+            <span class="token keyword">return</span> repr<span class="token punctuation">(</span>self.value<span class="token punctuation">)</span>
+
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> try:
+        raise MyError<span class="token punctuation">(</span>2*2<span class="token punctuation">)</span>
+    except MyError as e:
+        print<span class="token punctuation">(</span><span class="token string">&apos;My exception occurred, value:&apos;</span>, e.value<span class="token punctuation">)</span>
+
+My exception occurred, value: 4
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> raise MyError<span class="token punctuation">(</span><span class="token string">&apos;oops!&apos;</span><span class="token punctuation">)</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+__main__.MyError: <span class="token string">&apos;oops!&apos;</span>
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x7C7B;<code>Exception</code>&#x9ED8;&#x8BA4;&#x7684;<code>__init__()</code>&#x88AB;&#x8986;&#x76D6;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5F53;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x6709;&#x53EF;&#x80FD;&#x629B;&#x51FA;&#x591A;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x4E00;&#x79CD;&#x901A;&#x5E38;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4E3A;&#x8FD9;&#x4E2A;&#x5305;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;
+&#x57FA;&#x7840;&#x5F02;&#x5E38;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x57FA;&#x7840;&#x7C7B;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x9519;&#x8BEF;&#x60C5;&#x51B5;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7C7B;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">class</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>Exception<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;Base class for exceptions in this module.&quot;&quot;&quot;</span>
+    <span class="token keyword">pass</span>
+
+<span class="token keyword">class</span> <span class="token class-name">InputError</span><span class="token punctuation">(</span>Error<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;Exception raised for errors in the input.
+
+    Attributes:
+        expression -- input expression in which the error occurred
+        message -- explanation of the error
+    &quot;&quot;&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> expression<span class="token punctuation">,</span> message<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>expression <span class="token operator">=</span> expression
+        self<span class="token punctuation">.</span>message <span class="token operator">=</span> message
+
+<span class="token keyword">class</span> <span class="token class-name">TransitionError</span><span class="token punctuation">(</span>Error<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;Raised when an operation attempts a state transition that&apos;s not
+    allowed.
+
+    Attributes:
+        previous -- state at beginning of transition
+        next -- attempted new state
+        message -- explanation of why the specific transition is not allowed
+    &quot;&quot;&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> previous<span class="token punctuation">,</span> <span class="token builtin">next</span><span class="token punctuation">,</span> message<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>previous <span class="token operator">=</span> previous
+        self<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">=</span> <span class="token builtin">next</span>
+        self<span class="token punctuation">.</span>message <span class="token operator">=</span> message
+</code></pre>
+<p>&#x5927;&#x591A;&#x6570;&#x7684;&#x5F02;&#x5E38;&#x7684;&#x540D;&#x5B57;&#x90FD;&#x4EE5;&quot;Error&quot;&#x7ED3;&#x5C3E;&#xFF0C;&#x5C31;&#x8DDF;&#x6807;&#x51C6;&#x7684;&#x5F02;&#x5E38;&#x547D;&#x540D;&#x4E00;&#x6837;&#x3002;</p>
+<h3 id="&#x5B9A;&#x4E49;&#x6E05;&#x7406;&#x884C;&#x4E3A;">&#x5B9A;&#x4E49;&#x6E05;&#x7406;&#x884C;&#x4E3A;</h3>
+<p>&#x2003;&#x2003;<font color="red"><code>try</code>&#x8BED;&#x53E5;&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;&#x5B50;&#x53E5;<code>finally</code>&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x65E0;&#x8BBA;&#x5728;
+&#x4EFB;&#x4F55;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;&#x3002;</font>&#x4F8B;&#x5982;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>try:
+<span class="token punctuation">..</span>.     raise KeyboardInterrupt
+<span class="token punctuation">..</span>. finally:
+<span class="token punctuation">..</span>.     print<span class="token punctuation">(</span><span class="token string">&apos;Goodbye, world!&apos;</span><span class="token punctuation">)</span>
+<span class="token punctuation">..</span>.
+Goodbye, world<span class="token operator">!</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 2, <span class="token keyword">in</span> <span class="token operator">&lt;</span>module<span class="token operator">&gt;</span>
+KeyboardInterrupt
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x4F8B;&#x5B50;<font color="red">&#x4E0D;&#x7BA1;<code>try</code>&#x5B50;&#x53E5;&#x91CC;&#x9762;&#x6709;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x5F02;&#x5E38;&#xFF0C;<code>finally</code>&#x5B50;&#x53E5;&#x90FD;&#x4F1A;&#x6267;&#x884C;</font>&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5F02;&#x5E38;&#x5728;<code>try</code>&#x5B50;&#x53E5;&#x91CC;&#xFF08;&#x6216;&#x8005;&#x5728;<code>except</code>&#x548C;<code>else</code>&#x5B50;&#x53E5;&#x91CC;&#xFF09;&#x88AB;&#x629B;&#x51FA;&#xFF0C;&#x800C;&#x53C8;&#x6CA1;&#x6709;
+&#x4EFB;&#x4F55;&#x7684;<code>except</code>&#x628A;&#x5B83;&#x622A;&#x4F4F;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5F02;&#x5E38;&#x4F1A;&#x5728;<code>finally</code>&#x5B50;&#x53E5;&#x6267;&#x884C;&#x540E;&#x518D;&#x6B21;&#x88AB;&#x629B;&#x51FA;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x7684;&#x4F8B;&#x5B50;&#xFF08;&#x5728;&#x540C;&#x4E00;&#x4E2A;<code>try</code>&#x8BED;&#x53E5;&#x91CC;&#x5305;&#x542B;<code>except</code>&#x548C;<code>finally</code>&#x5B50;&#x53E5;&#xFF09;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>def divide<span class="token punctuation">(</span>x, y<span class="token punctuation">)</span>:
+        try:
+            result <span class="token operator">=</span> x / y
+        except ZeroDivisionError:
+            print<span class="token punctuation">(</span><span class="token string">&apos;division by zero!&apos;</span><span class="token punctuation">)</span>
+        else:
+            print<span class="token punctuation">(</span><span class="token string">&apos;result is&apos;</span>, result<span class="token punctuation">)</span>
+        finally:
+            print<span class="token punctuation">(</span><span class="token string">&apos;executing finally clause&apos;</span><span class="token punctuation">)</span>
+
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> divide<span class="token punctuation">(</span>2, 1<span class="token punctuation">)</span>
+result is 2.0
+executing finally clause
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> divide<span class="token punctuation">(</span>2, 0<span class="token punctuation">)</span>
+division by zero<span class="token operator">!</span>
+executing finally clause
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> divide<span class="token punctuation">(</span><span class="token string">&apos;2&apos;</span>, <span class="token string">&apos;1&apos;</span><span class="token punctuation">)</span>
+executing finally clause
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span>:
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 1, <span class="token keyword">in</span> ?
+  File <span class="token string">&quot;&lt;stdin&gt;&quot;</span>, line 3, <span class="token keyword">in</span> divide
+TypeError: unsupported operand type<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token keyword">for</span> /: <span class="token string">&apos;str&apos;</span> and <span class="token string">&apos;str&apos;</span>
+</code></pre>
+<h3 id="&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;">&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;</h3>
+<p>&#x2003;&#x2003;&#x4E00;&#x4E9B;&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#x4E86;&#x6807;&#x51C6;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;&#xFF0C;&#x65E0;&#x8BBA;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x6210;&#x529F;&#x7684;&#x4F7F;&#x7528;&#x4E86;&#x5B83;&#xFF0C;&#x4E00;&#x65E6;&#x4E0D;&#x9700;&#x8981;&#x5B83;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;
+&#x6807;&#x51C6;&#x7684;&#x6E05;&#x7406;&#x884C;&#x4E3A;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8FD9;&#x9762;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C55;&#x793A;&#x4E86;&#x5C1D;&#x8BD5;&#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5185;&#x5BB9;&#x6253;&#x5370;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;:</p>
+<pre class="language-"><code class="lang-sh"><span class="token keyword">for</span> line <span class="token keyword">in</span> open<span class="token punctuation">(</span><span class="token string">&apos;test.txt&apos;</span><span class="token punctuation">)</span>:
+    print<span class="token punctuation">(</span>line, end<span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#x662F;&#xFF0C;&#x5F53;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6587;&#x4EF6;&#x4F1A;&#x4FDD;&#x6301;&#x6253;&#x5F00;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x5173;&#x95ED;&#x3002;</p>
+<p>&#x2003;&#x2003;<font color="red">&#x5173;&#x952E;&#x8BCD;<code>with</code>&#x8BED;&#x53E5;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x8BF8;&#x5982;&#x6587;&#x4EF6;&#x4E4B;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5728;&#x4F7F;&#x7528;&#x5B8C;&#x4E4B;&#x540E;&#x4E00;
+&#x5B9A;&#x4F1A;&#x6B63;&#x786E;&#x7684;&#x6267;&#x884C;&#x4ED6;&#x7684;&#x6E05;&#x7406;&#x65B9;&#x6CD5;&#x3002;</font></p>
+<pre class="language-"><code class="lang-sh">with open<span class="token punctuation">(</span><span class="token string">&apos;test.txt&apos;</span><span class="token punctuation">)</span> as fp:
+    <span class="token keyword">for</span> line <span class="token keyword">in</span> fp:
+        print<span class="token punctuation">(</span>line, end<span class="token operator">=</span><span class="token string">&apos;&apos;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x5C31;&#x7B97;&#x5728;&#x5904;&#x7406;&#x8FC7;&#x7A0B;&#x4E2D;&#x51FA;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x6587;&#x4EF6;<code>fp</code>&#x603B;&#x662F;&#x4F1A;&#x5173;&#x95ED;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.11-文件操作.html" class="navigation navigation-prev " aria-label="Previous page: 1.11、文件操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.13-类与对象.html" class="navigation navigation-next " aria-label="Next page: 1.13、类与对象">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.12、错误与异常","level":"1.2.12","depth":2,"next":{"title":"1.13、类与对象","level":"1.2.13","depth":2,"path":"基础知识/1.13-类与对象.md","ref":"基础知识/1.13-类与对象.md","articles":[]},"previous":{"title":"1.11、文件操作","level":"1.2.11","depth":2,"path":"基础知识/1.11-文件操作.md","ref":"基础知识/1.11-文件操作.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","-search","spoiler","sectionx","latex-codecogs"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"latex-codecogs":{"type":"gif"},"prism":{},"spoiler":{},"lunr":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"冉禛","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Python培训教程","language":"zh-hans","gitbook":"3.0.0"},"file":{"path":"基础知识/1.12-错误与异常.md","mtime":"2019-04-24T10:14:45.643Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2019-04-24T10:14:56.214Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-spoiler/spoiler.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
